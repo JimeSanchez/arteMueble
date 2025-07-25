@@ -1,0 +1,186 @@
+.logo {
+    height: 80px;
+}
+
+.form-custom {
+    flex-grow: 1;
+    /*elemento crecerán igual para llenar el contenedor.*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*Centrado*/
+    gap: 50px;
+    /* espacio entre input y botón */
+}
+
+#buscador {
+    gap: 25px;
+    width: 60%;
+}
+
+/*menu*/
+.nav-link {
+    color: #517152 !important;
+    /* ejemplo: verde oscuro */
+}
+
+.nav-link:hover {
+    background-color: #F2F0EF;
+    color: black;
+}
+
+
+
+
+
+
+/*______________________________________________________________________________________________________________________________________________________________________________________*/
+
+
+/*footer*/
+
+
+.bi-whatsapp {
+    color: #25D366;
+    /* El verde oficial de WhatsApp */
+}
+
+.bi-facebook {
+    fill: #4267B2;
+    /* Color azul de Facebook */
+}
+
+.social-link:hover svg {
+    transform: scale(1.1);
+    /* Efecto de "zoom" al pasar el ratón */
+}
+
+
+#footerr {
+    background-color: black;
+    /* Fondo negro  */
+    color: white;
+    /* Color  texto */
+    padding: 40px 20px;
+    /* Espacio interno */
+    display: flex;
+    /*  para alinear las columnas */
+    justify-content: space-around;
+    /* Distribuye el espacio uniformemente entre las columnas */
+    flex-wrap: wrap;
+    /* Permite hacer el espacio entre  columnas  */
+    gap: 30px;
+    /* Espacio entre las columnas */
+    margin-top: 0;
+}
+
+.footer-column {
+    /* Estilos para cada columna individual */
+    flex: 1;
+    /* una columna al lado de otra  */
+    min-width: 180px;
+    /* Ancho mínimo para las columnas */
+    max-width: 300px;
+    /* Ancho máximo  evitar que una columna sea demasiado ancha */
+    padding: 0 15px;
+    /* Espacio interno dentro de cada columna */
+}
+
+#footerr h6 {
+    color: white;
+    /* Asegura que los títulos sean blancos */
+    font-size: 1.1em;
+    /* Tamaño de fuente para los títulos de columna */
+    margin-bottom: 15px;
+    /* Espacio debajo del título */
+    font-weight: bold;
+    /* Opcional: negrita para los títulos */
+}
+
+#footerr ul {
+    list-style: none;
+    /* Elimina los puntos de la lista */
+    padding: 0;
+    /* Elimina el padding por defecto de la lista */
+    margin: 0;
+}
+
+#footerr ul li {
+    margin-bottom: 8px;
+    /* Espacio entre los elementos de la lista */
+}
+
+/*Eliminar lo de los enlaces a */
+#footerr a {
+    color: white;
+    /* Color  enlaces */
+    text-decoration: none;
+    /* Elimina el subrayado */
+    font-size: 0.95em;
+    /* Tamaño de  los enlaces */
+    transition: color 0.3s ease;
+    /* Transición suave para el hover */
+}
+
+/* Cambia el color al pasar el ratón */
+#footerr a:hover {
+    color: #cccccc;
+}
+
+
+#footerr p {
+    font-size: 0.95em;
+    /* Tamaño del texto */
+    line-height: 1.6;
+    /* Espaciado entre líneas */
+    margin-bottom: 20px;
+    /* Espacio  del párrafo de horario */
+}
+
+/* Estilos para los iconos de redes sociales */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    /* Espacio entre los iconos */
+    margin-top: 15px;
+    /* Espacio encima de los iconos */
+}
+
+#ultimo {
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 5px;
+    background-color: black;
+
+}
+
+/*Media query */
+
+
+/* ____________________________________________________________________________MEDIA QUERY____________________________________________  */
+
+@media (max-width: 768px) {
+
+    /* Ocultar la navbar1 el de busqueda  */
+    .navbar1 {
+        display: none;
+    }
+
+    .horario {
+        margin-left: auto;
+        text-align: right;
+    }
+
+    .horario .social-icons {
+        justify-content: flex-end;
+    }
+
+    .nav-link:hover {
+        background-color: #517152;
+    }
+
+    .nav-link {
+        color: black !important;
+    }
+}

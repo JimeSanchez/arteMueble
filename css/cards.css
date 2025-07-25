@@ -1,0 +1,110 @@
+.barraverde {
+    background-color: #517152;
+    /*fondo*/
+    text-align: center;
+    /*centrar */
+    padding: 20px;
+    /*espacio interno*/
+}
+
+.contenedorPri {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /*crear 5 columnas del mismo tamaño*/
+    /*  5 por fila */
+    gap: 20px;
+    /*Espacio entre columnas*/
+    padding: 20px;
+    /*Espacio interno */
+}
+
+.card {
+    width: 100%;
+    /* para que se ajuste al grid */
+    background-color: #F2F0EF;
+}
+
+.card img {
+    height: 150px;
+    object-fit: cover;
+
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+/*______________________________________________________________________Boton WhatsApp*/
+.botonWhats {
+    display: inline-flex;
+    /*hace que sea flexible*/
+    align-items: center;
+    /*centra los elmentos deltro del boton */
+    gap: 10px;
+    /* Espacio entre el ícono y el texto */
+    background-color: #517152;
+    color: white;
+    /*color letra */
+    padding: 12px 20px;
+    border-radius: 12px;
+    /*borde redondiado*/
+    text-decoration: none;
+    /*quita el sumbrayado del A*/
+    font-weight: bold;
+    /*Legra en negra*/
+    font-size: 16px;
+    /*Tamaño de la letra*/
+    border: none;
+    /*quita el borde*/
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /*sombra*/
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    /*hora de pasar el mouse */
+}
+
+.botonWhats svg {
+    transition: transform 0.3s ease;
+
+}
+
+.botonWhats:hover {
+    background-color: #6c8a6b;
+    transform: scale(1.05);
+    /*hace que se haga un poco mas grande */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    /*hace una sombra*/
+}
+
+.botonWhats:hover svg {
+    transform: scale(1.2) rotate(5deg);
+    /*le hace al icno que crezca  */
+}
+
+.boton {
+    text-align: center;
+    /*centra el texto*/
+    margin: 20px 0;
+    /*espacio arriba y abajo */
+}
+
+/*_____________________________________________________mEDIA Query_______________________________________________________*/
+@media (max-width: 768px) {
+    .contenedorPri {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        background-color: gray;
+    }
+
+    .card {
+        background-color: #F2F0EF;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+
+    .card img:hover {
+        transform: scale(1.1);
+
+    }
+}

@@ -1,0 +1,148 @@
+/*Carrusel */
+.carousel img {
+    height: 600px;
+    /* Ajustá a lo que te guste */
+    object-fit: cover;
+    /* Recorta y centra la imagen para que no se deforme */
+}
+
+/*centro titulo  */
+#cont {
+    color: #517152;
+    font-size: 50px;
+    /*Tamaño de la letra*/
+}
+
+/*letra centro */
+#contac2 {
+    width: 85%;
+    /* Or any other suitable width, like max-content or a fixed pixel value */
+    margin: 0 auto;
+    /* This centers the block horizontally */
+    text-align: center;
+    /* Keeps the text and button centered within contac2 */
+    padding: 20px;
+    font-size: 30px;
+}
+
+#contac2:hover {
+    transform: scale(1.1);
+    /* Lo agranda un 10% al tocar */
+}
+
+.card:hover {
+    transform: scale(1.1);
+    /* Lo agranda un 10% al tocar */
+}
+
+.card {
+    text-align: center;
+}
+
+
+
+/*______________________________________________________________________Boton WhatsApp*/
+.botonWhats {
+    display: inline-flex;
+    /*hace que sea flexible*/
+    align-items: center;
+    /*centra los elmentos deltro del boton */
+    gap: 10px;
+    /* Espacio entre el ícono y el texto */
+    background-color: #517152;
+    color: white;
+    /*color letra */
+    padding: 12px 20px;
+    border-radius: 12px;
+    /*borde redondiado*/
+    text-decoration: none;
+    /*quita el sumbrayado del A*/
+    font-weight: bold;
+    /*Legra en negra*/
+    font-size: 16px;
+    /*Tamaño de la letra*/
+    border: none;
+    /*quita el borde*/
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /*sombra*/
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    /*hora de pasar el mouse */
+}
+
+.botonWhats svg {
+    transition: transform 0.3s ease;
+
+}
+
+.botonWhats:hover {
+    background-color: #6c8a6b;
+    transform: scale(1.05);
+    /*hace que se haga un poco mas grande */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    /*hace una sombra*/
+}
+
+.botonWhats:hover svg {
+    transform: scale(1.2) rotate(5deg);
+    /*le hace al icno que crezca  */
+}
+
+.boton {
+    text-align: center;
+    /*centra el texto*/
+    margin: 20px 0;
+    /*espacio arriba y abajo */
+}
+
+.enlace {
+    display: inline-flex;
+    /*hace que sea flexible*/
+    text-decoration: none;
+    /*quita el sumbrayado del A*/
+    color: #517152;
+    /*Color de la letra*/
+    font-size: 25px;
+    /*Tamaño de la letra*/
+
+}
+
+.enlace:hover {
+    transform: scale(1.1);
+    /* Lo agranda un 10% al tocar */
+}
+
+
+/*__________________________________________________________________________________________________________________________________*/
+
+@media (max-width: 768px) {
+    .card-group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 tarjetas por fila */
+        gap: 16px;
+    }
+
+    .carousel img {
+        height: auto;
+        object-fit: contain;
+    }
+
+    .card {
+        background-color: #F2F0EF;
+    }
+
+
+    #cont {
+        color: #517152;
+        font-size: 40px;
+    }
+
+    #contac2 {
+        font-size: 24px;
+
+    }
+
+
+
+
+}

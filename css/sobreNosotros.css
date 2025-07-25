@@ -1,0 +1,51 @@
+.verde {
+    padding: 25px;
+    /*espacio interno*/
+    text-align: center;
+    /*centrar*/
+    background-color: #517152;
+    ;
+}
+
+.parrafo1 {
+    padding: 45px;
+    /*espacio interno*/
+    font-size: 22px;
+    /*tamaño de la letra*/
+}
+
+strong {
+    font-size: 35px;
+    /*tamaño de la letra*/
+}
+
+#ubica h3 {
+
+    padding: 45px;
+    /**/
+    font-size: 50px;
+    /*tamaño de la letra*/
+}
+
+/*_________________________________________________________________Media Query_________________________________________________*/
+@media (max-width: 768px) {
+
+    body {
+        background-color: #F2F0EF;
+        /*Color de la pagina*/
+    }
+
+    .parrafo1 {
+
+        font-size: 18px;
+        /*tamaño de la letra*/
+    }
+
+    #ubica h3 {
+
+        font-size: 40px;
+        /*tamaño de la letra*/
+    }
+
+
+}

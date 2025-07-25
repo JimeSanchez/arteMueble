@@ -1,0 +1,80 @@
+/*Carrucel*/
+.carousel img {
+    height: 600px;
+    /* Ajustá a lo que te guste */
+    object-fit: cover;
+    /* Recorta y centra la imagen para que no se deforme */
+}
+
+#barraNombre {
+    background-color: #517152;
+    padding: 10px;
+    /*espacio interno*/
+    text-align: center;
+    /*aLINEA EL TEXTO AL CENTRO */
+}
+
+/*Los cards */
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columnas por fila */
+    gap: 20px;
+    /* espacio entre cuadros */
+    padding: 100px;
+
+}
+
+.cuadro {
+    border: 4px solid;
+    border-color: #517152;
+    padding: 10px;
+    /*espacio interno*/
+    text-align: center;
+    /*centrar al centro*/
+    background-color: #F2F0EF;
+}
+
+img:hover {
+    transform: scale(1.1);
+    /* Lo agranda un 10% al tocar */
+}
+
+/*Codigo de las telas */
+.cod {
+
+    color: #517152;
+}
+
+/*_____________________________________________________________________Media Query______________________________________________________________*/
+
+@media (max-width: 768px) {
+
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5px;
+    }
+
+    .cuadro img {
+        width: 100%;
+        /* 📏 Ocupa todo el ancho disponible del cuadro */
+        height: auto;
+        /* 🧠 Mantiene la proporción de la imagen */
+
+    }
+
+    .carousel-inner img {
+        height: auto;
+    }
+
+    img:hover {
+        transform: none;
+    }
+
+    .cuadro:hover {
+        transform: scale(1.1);
+        /* Lo agranda un 10% al tocar */
+    }
+
+
+}
